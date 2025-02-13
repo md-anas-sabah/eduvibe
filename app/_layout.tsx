@@ -1,7 +1,5 @@
 import React from "react";
-
 import { Stack } from "expo-router";
-import index from ".";
 import { ThemeProvider } from "@/context/theme.context";
 
 export default function _layout() {
@@ -13,6 +11,7 @@ export default function _layout() {
         }}
       >
         <Stack.Screen name="index" />
+        <Stack.Screen name="(routes)/onboarding/index" />
       </Stack>
     </ThemeProvider>
   );
